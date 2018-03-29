@@ -24,11 +24,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://54.255.174.42:8081/')
 
-WebUI.setText(findTestObject('Page_Lab 234/input_score'), '99')
+WebUI.setText(findTestObject('Page_Lab 234/input_score'), '55')
 
 WebUI.click(findTestObject('Page_Lab 234/button_Submit'))
 
-WebUI.verifyElementText(findTestObject('Page_Lab 234/answer'), 'F')
+WebUI.verifyElementText(findTestObject('Page_Lab 234/answer'), 'D')
 
 WebUI.closeBrowser()
 
