@@ -28,7 +28,9 @@ WebUI.setText(findTestObject('Page_Lab 234/input_score'), '99')
 
 WebUI.click(findTestObject('Page_Lab 234/button_Submit'))
 
-WebUI.verifyElementText(findTestObject('Page_Lab 234/answer'), 'F')
+WebUI.waitForElementVisible(findTestObject('Page_Lab 234/answer'), 30)
+
+WebUI.verifyElementText(findTestObject('Page_Lab 234/answer'), 'A')
 
 WebUI.closeBrowser()
 
